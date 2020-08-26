@@ -32,7 +32,9 @@ class AFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         btn_click.setOnClickListener {
+            ///ini bisa di isi di fragment, pas ngirim data menggunakan intent, di ganti pakai ini
             listener?.onFabolousEvent("data 1","data 2")
         }
     }
